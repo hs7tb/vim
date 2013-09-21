@@ -1,0 +1,36 @@
+[user]
+	email = hush@amazon.com
+	name = Hui Shu
+[alias]
+    st = status
+    co = checkout
+    ci = commit -a
+    graph = log --graph --decorate --all
+    sync = pull --rebase
+    unadd = reset --
+    unedit = checkout --
+    unstage = reset HEAD
+    unrm = checkout --
+    unstash = stash pop
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[push]
+    default = tracking
+[branch]
+    autosetuprebase = always
+[merge]
+    ff = false
+[core]
+	excludesfile = /Users/hush/.gitignore
+	deltaBaseCacheLimit = 1G
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
