@@ -93,7 +93,19 @@ set fencs=utf-8,chinese,ucs-bom,gb18030,gbk,gb2312,cp936
 "autoread files that are editted by other apps
 set autoread
 
+"window navigation
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-L> <C-W>l<C-W>_
 autocmd FileType cpp setlocal sw=2 ts=2 sts=2
-autocmd FileType python setlocal sw=2 ts=2 sts=2
 
 let mapleader = ","
+
+"set path to chromium directory
+set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/amazon/**
+set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/content/**
+
+"shorten tabnew becaue I am lazy
+cmap tn tabnew
+

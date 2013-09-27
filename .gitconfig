@@ -28,6 +28,7 @@
 [core]
 	excludesfile = /Users/hush/.gitignore
 	deltaBaseCacheLimit = 1G
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
