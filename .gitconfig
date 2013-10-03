@@ -23,8 +23,6 @@
     default = tracking
 [branch]
     autosetuprebase = always
-[merge]
-    ff = false
 [core]
 	excludesfile = /Users/hush/.gitignore
 	deltaBaseCacheLimit = 1G

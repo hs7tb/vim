@@ -105,7 +105,13 @@ let mapleader = ","
 "set path to chromium directory
 set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/amazon/**
 set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/content/**
+set path+=~/cloud9/src/**
 
 "shorten tabnew becaue I am lazy
 cmap tn tabnew
 
+"set cscope to display result in quickfix window
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+"add some cscope db
+cs add ~/cloud9/src/cscope.out
+cs add ~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/cscope.out
