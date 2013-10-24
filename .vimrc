@@ -103,8 +103,9 @@ autocmd FileType cpp setlocal sw=2 ts=2 sts=2
 let mapleader = ","
 
 "set path to chromium directory
-set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/amazon/**
 set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/content/**
+set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/amazon/**
+set path+=~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/net/**
 set path+=~/cloud9/src/**
 
 "shorten tabnew becaue I am lazy
@@ -115,3 +116,9 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 "add some cscope db
 cs add ~/cloud9/src/cscope.out
 cs add ~/chromium-v28-1500/Cloud9NativeChromiumBuild/src/cscope.out
+
+"automatically read the file when it is changed
+set autoread
+
+""
+nmap <leader>t :TlistToggle<cr>
